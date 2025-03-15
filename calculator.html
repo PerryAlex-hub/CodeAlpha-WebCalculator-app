@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+   <div>
+    <p class="js-input" ></p>
+   </div>
+
+    <p>
+        <button onclick="calculation(1)" class="grey">1</button>
+        
+        <button onclick="calculation(2)" class="grey">2</button>
+
+        <button onclick="calculation(3)" class="grey">3</button>
+
+        <button onclick="calculation('+')" class="yellow">+</button>
+    </p>
+
+    <p>
+        <button onclick="calculation(4)" class="grey">4</button>
+        
+        <button onclick="calculation(5)" class="grey">5</button>
+
+        <button onclick="calculation(6)" class="grey">6</button>
+
+        <button onclick="calculation('-')" class="yellow">-</button>
+    </p>
+
+    <p>
+        <button onclick="calculation(7)" class="grey">7</button>
+        
+        <button onclick="calculation(8)" class="grey">8</button>
+
+        <button onclick="calculation(9)" class="grey">9</button>
+
+        <button onclick="calculation('*')" class="yellow">*</button>
+    </p>
+
+    <p>
+        <button onclick="calculation(0)" class="grey">0</button>
+        
+        <button onclick="calculation('.')" class="grey">.</button>
+
+        <button onclick="document.querySelector('.js-input').innerHTML  = eval(calculate)
+        if (document.querySelector('.js-input').innerHTML  = eval(calculate)) {
+            calculate = '';
+        }
+        " class="grey">=</button>
+
+        <button onclick="calculation('/')" class="yellow">/</button>
+    </p>
+
+    <p>
+        <button onclick=" document.querySelector('.js-input').innerHTML  = calculate =' ' " class="clear-btn grey">Clear</button>
+        
+        
+    </p>
+
+
+    <script src="calculator.js"></script>
+</body>
+</html>
