@@ -46,10 +46,8 @@
         
         <button onclick="calculation('.')" class="grey">.</button>
 
-        <button onclick="document.querySelector('.js-input').innerHTML  = eval(calculate)
-        if (document.querySelector('.js-input').innerHTML  = eval(calculate)) {
-            calculate = '';
-        }
+        <button onclick="
+          evaluateResult()
         " class="grey">=</button>
 
         <button onclick="calculation('/')" class="yellow">/</button>
@@ -57,6 +55,8 @@
 
     <p>
         <button onclick=" document.querySelector('.js-input').innerHTML  = calculate =' ' " class="clear-btn grey">Clear</button>
+
+        <button onclick=" deleteBtn() " class="clear-btn grey">Del</button>
         
         
     </p>
