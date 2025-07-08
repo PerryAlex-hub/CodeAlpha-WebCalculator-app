@@ -3,65 +3,45 @@
 <html lang="en">
 <head>
     <title>Calculator Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-   <div>
-    <p class="js-input" ></p>
-   </div>
+    <div class="calc-bg">
+      <div class="calculator-container">
+        <div class="calc-header">
+          <h2>Calculator</h2>
+        </div>
+        <div class="display-container">
+          <p class="js-input"></p>
+        </div>
+        <div class="buttons-grid">
+          <button onclick="calculation(7)" class="grey">7</button>
+          <button onclick="calculation(8)" class="grey">8</button>
+          <button onclick="calculation(9)" class="grey">9</button>
+          <button onclick="calculation('/')" class="yellow">÷</button>
 
-    <p>
-        <button onclick="calculation(1)" class="grey">1</button>
-        
-        <button onclick="calculation(2)" class="grey">2</button>
+          <button onclick="calculation(4)" class="grey">4</button>
+          <button onclick="calculation(5)" class="grey">5</button>
+          <button onclick="calculation(6)" class="grey">6</button>
+          <button onclick="calculation('*')" class="yellow">×</button>
 
-        <button onclick="calculation(3)" class="grey">3</button>
+          <button onclick="calculation(1)" class="grey">1</button>
+          <button onclick="calculation(2)" class="grey">2</button>
+          <button onclick="calculation(3)" class="grey">3</button>
+          <button onclick="calculation('-')" class="yellow">−</button>
 
-        <button onclick="calculation('+')" class="yellow">+</button>
-    </p>
+          <button onclick="calculation(0)" class="grey">0</button>
+          <button onclick="calculation('.')" class="grey">.</button>
+          <button onclick="evaluateResult()" class="equal-btn">=</button>
+          <button onclick="calculation('+')" class="yellow">+</button>
 
-    <p>
-        <button onclick="calculation(4)" class="grey">4</button>
-        
-        <button onclick="calculation(5)" class="grey">5</button>
-
-        <button onclick="calculation(6)" class="grey">6</button>
-
-        <button onclick="calculation('-')" class="yellow">-</button>
-    </p>
-
-    <p>
-        <button onclick="calculation(7)" class="grey">7</button>
-        
-        <button onclick="calculation(8)" class="grey">8</button>
-
-        <button onclick="calculation(9)" class="grey">9</button>
-
-        <button onclick="calculation('*')" class="yellow">*</button>
-    </p>
-
-    <p>
-        <button onclick="calculation(0)" class="grey">0</button>
-        
-        <button onclick="calculation('.')" class="grey">.</button>
-
-        <button onclick="
-          evaluateResult()
-        " class="grey">=</button>
-
-        <button onclick="calculation('/')" class="yellow">/</button>
-    </p>
-
-    <p>
-        <button onclick=" document.querySelector('.js-input').innerHTML  = calculate =' ' " class="clear-btn grey">Clear</button>
-
-        <button onclick=" deleteBtn() " class="clear-btn grey">Del</button>
-        
-        
-    </p>
-
-
+          <button onclick="document.querySelector('.js-input').innerHTML  = calculate =' ' " class="clear-btn">C</button>
+          <button onclick="deleteBtn()" class="clear-btn">⌫</button>
+        </div>
+      </div>
+    </div>
     <script src="calculator.js"></script>
 </body>
 </html>
